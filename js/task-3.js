@@ -17,13 +17,13 @@ const images = [
 ];
 
 images.forEach(element => {
-  const ulEl = document.querySelector('ul');
-  let elemehOfListEl = document.createElement('li');
+  const ImageGalaryEl = document.querySelector('ul');
+  let elementOfImgGalaryEl = document.createElement('li');
 
   let createImgEl = document.createElement('img');
   createImgEl.src = element.url;
   createImgEl.alt = element.alt;
 
-  elemehOfListEl.appendChild(createImgEl);
-  ulEl.appendChild(elemehOfListEl);
+  elementOfImgGalaryEl.appendChild(createImgEl);
+  ImageGalaryEl.appendChild(elementOfImgGalaryEl);
 });
